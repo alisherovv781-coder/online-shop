@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍️ Online Shop</h1>
+
+    <nav>
+        <a href="#">Bosh sahifa</a>
+        <a href="#">Mahsulotlar</a>
+        <a href="#">Aloqa</a>
+        <button id="cartBtn">🛒 Savatcha (0)</button>
+    </nav>
+</header>
+
+<main>
+
+<div class="products">
+
+<div class="product">
+<img src="images/phone.jpg" alt="Telefon">
+<h2>iPhone 15 Pro</h2>
+<p>150 000 000 so'm</p>
+<button>Savatchaga qo'shish</button>
+</div>
+
+<div class="product">
+<img src="images/laptop.jpg" alt="Laptop">
+<h2>MacBook Air</h2>
+<p>180 000 000 so'm</p>
+<button>Savatchaga qo'shish</button>
+</div>
+
+<div class="product">
+<img src="images/watch.jpg" alt="Soat">
+<h2>Apple Watch</h2>
+<p>40 000 000 so'm</p>
+<button>Savatchaga qo'shish</button>
+</div>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+<main>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder=" Mahsulot qidiring...">
+</div>
+</main>
+
+<main>
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+        <span id="closeCart">&times;</span>
+        <h2>🛒 Savatcha</h2>
+
+        <ul id="cartItems"></ul>
+
+        <h3>Jami: <span id="totalPrice">0</span> so'm</h3>
+    </div>
+</div>
+</main>
+
+<button id="checkoutBtn"> Buyurtma berish</button>
+
+<header>
+  <div class="user-menu">
+    <button id="loginBtn">👤 Login</button>
+    <button id="registerBtn">📝 Ro'yxatdan o'tish</button>
+</div>
+</header>
+
+<header>
+  <button id="darkModeBtn">🌙 Dark Mode</button>
+</header>
+
+<button class="likeBtn">❤️</button>
+
+<div class="rating">
+    <span class="star">⭐</span>
+    <span class="star">⭐</span>
+    <span class="star">⭐</span>
+    <span class="star">⭐</span>
+    <span class="star">⭐</span>
+</div>
+
+<textarea class="comment" placeholder="Izoh yozing..."></textarea>
+<button class="sendComment">Yuborish</button>
+
+<button id="logoutBtn"> Logout</button>
+
+<form id="checkoutForm">
+    <input type="text" id="fullName" placeholder="Ism va familiya" required>
+
+    <input type="text" id="address" placeholder="Manzil" required>
+
+    <input type="tel" id="phone" placeholder="+998 XX XXX XX XX" required>
+
+    <button type="submit"> Buyurtmani tasdiqlash</button>
+</form>
+
+<checkoutForm>
+  <h3>Buyurtmalar tarixi</h3>
+
+<ul id="orderHistory"></ul>
+
+<input type="text" id="coupon" placeholder="Chegirma kodi">
+
+<button id="couponBtn">Chegirmani qo'llash</button>
+</checkoutForm> 
+
+</body>
+</html>
